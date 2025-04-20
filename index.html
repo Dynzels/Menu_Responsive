@@ -5,98 +5,241 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Menu responsive créé dans un but pédagogique.">
-    <meta property="og:title" content="Menu responsive">
-    <meta name="robots" content="index,follow" />
-    <meta name="Author" content="Yohan CHEVROT" />
-    <meta name="theme-color" content="#444444">
-    <title>Menu Responsive</title>
-    <meta property="og:title" content="Menu responsive" />
+    <meta name="description" content="Yohan Chevrot - Technicien Informatique, Développeur Web & Social Media Manager. Passionné par l'IA, l'automatisation et les technologies Microsoft (Exchange, Power Automate).">
+    <meta name="keywords" content="technicien informatique, dépannage informatique, support technique, maintenance informatique, développeur web, Yohan Chevrot, Dynzels, intelligence artificielle, agents IA, automatisation, Exchange, Active Directory, SCCM, Power Automate, PHP, MySQL, JavaScript, jQuery, Social Media Manager">
+    <meta name="author" content="Yohan CHEVROT">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta property="og:title" content="Yohan Chevrot (Dynzels) - Technicien Informatique, Développeur Web & Social Media Manager" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Menu responsive développé dans un but pédagogique." />
-    <meta property="og:url" content="https://www.yohan-chevrot/demos/Menu_Responsive" />
-    <meta property="og:image" content="http://yohan-chevrot.fr/demos/Menu_Responsive/img/background.png" />
+    <meta property="og:description" content="Technicien informatique, développeur web et social media manager avec une passion pour l'IA, l'automatisation et les technologies Microsoft (Exchange, Active Directory, SCCM)" />
+    <meta property="og:url" content="https://www.dynzels.fr" />
+    <meta property="og:image" content="https://www.dynzels.fr/img/background.png" />
+    <meta property="og:site_name" content="Dynzels" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yohan Chevrot (Dynzels)">
+    <meta name="twitter:description" content="Technicien Informatique, Développeur Web & Social Media Manager - Passionné par l'IA et l'automatisation">
+    <meta name="twitter:image" content="https://www.dynzels.fr/img/background.png">
+    <title>Yohan Chevrot (Dynzels) - Technicien Informatique, Développeur Web & Social Media Manager</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .hero-image {
+            width: 240px !important;
+            height: 240px !important;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-image {
+                width: 200px !important;
+                height: 200px !important;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Person">
     <!-- HEADER -->
     <header class="header">
-        <!-- Icône burger -->
-        <a class="header__btn">
-            <div class="burger burgerTop"></div>
-            <div class="burger burgerMiddle"></div>
-            <div class="burger burgerBottom"></div>
-        </a>
-
-        <!-- Menu -->
+        <div class="overlay"></div>
         <nav class="nav">
-            <!-- Couverture du menu -->
-            <div class="nav__header"></div>
-            <!-- Contenu du menu -->
             <div class="nav__content">
-                <!-- Menu de navigation -->
+                <div class="nav__logo">
+                    <a href="#accueil">Yohan Chevrot</a>
+                </div>
+                <button class="burger-menu" aria-label="Menu">
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                </button>
+                <div class="nav__menu">
                 <ul id="menu">
-                    <a href="http://yohan-chevrot.fr/demos/Menu_Responsive/">
-                        <li><i class="fas fa-home"></i>Accueil</li>
-                    </a>
-                    <a href="http://www.laissemoichercherca.com/">
-                        <li><i class="fab fa-google"></i>Rechercher</li>
-                    </a>
-                    <a href="https://news.google.com/?hl=fr&gl=FR&ceid=FR:fr">
-                        <li><i class="fas fa-newspaper"></i>Actualités</li>
-                    </a>
-                    <a href="https://play.google.com/store/search?q=dynzels">
-                        <li><i class="fab fa-android"></i>Applications</li>
-                    </a>
-                    <a href="https://codepen.io/dynzels/pen/QJLBpq">
-                        <li><i class="fas fa-code"></i>Code source</li>
-                    </a>
-                    <a href="http://www.staggeringbeauty.com/">
-                        <li><i class="fas fa-gamepad"></i></i>À vous d'jouer</li>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=3-CVWM0B9B4">
-                        <li><i class="fab fa-youtube"></i>Ne pas regarder</li>
-                    </a>
+                        <li><a href="#accueil"><i class="fas fa-home"></i>Accueil</a></li>
+                        <li><a href="#competences"><i class="fas fa-code"></i>Compétences</a></li>
+                        <li><a href="#projets"><i class="fas fa-project-diagram"></i>Projets</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
                 </ul>
-                <hr>
-                <!-- Liens réseaux sociaux -->
                 <ul id="social-network">
-                    <a href="https://www.facebook.com/profile.php?id=100008264139446" title="Facebook">
-                        <li><i class="fab fa-facebook-f"></i></li>
-                    </a>
-                    <a href="https://twitter.com/ychevrot" title="Twitter">
-                        <li><i class="fab fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/yohan-chevrot/" title="LinkedIn">
-                        <li><i class="fab fa-linkedin-in"></i></li>
-                    </a>
-                    <a href="https://github.com/Dynzels" title="Github">
-                        <li><i class="fab fa-github"></i></li>
-                    </a>
-                    <a href="mailto:dynzels@gmail.com?subject=Contact depuis la démo responsive" title="Envoyer un mail">
-                        <li><i class="fas fa-envelope"></i></li>
-                    </a>
+                        <li><a href="https://www.facebook.com/profile.php?id=100008264139446" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/yohan-chevrot/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Dynzels" title="Github" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="mailto:dynzels@gmail.com?subject=Contact depuis dynzels.fr" title="Envoyer un mail"><i class="fas fa-envelope"></i></a></li>
                 </ul>
+                </div>
             </div>
         </nav>
-
-        <div class="overlay"></div>
     </header>
 
     <!-- CONTENU PRINCIPAL -->
     <main class="main">
-        <h1>Menu burger & responsive</h1>
-        <p>Développé dans un but pédagogique.</p>
-        <p>Technologies utilisées : HTML/CSS et JavaScript.</p>
+        <!-- Section Hero -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <img src="./img/yohan.jpg" alt="Yohan Chevrot" class="hero-image" itemprop="image">
+                <h1 itemprop="name">Yohan Chevrot</h1>
+                <h2 itemprop="jobTitle">Technicien Informatique, Développeur Web & Social Media Manager</h2>
+                <p class="hero-description" itemprop="description">Passionné par les technologies, l'intelligence artificielle et l'automatisation des processus</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">Me Contacter</a>
+                    <a href="#projets" class="cta-button secondary">Voir mes Projets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="about">
+            <div class="about-content">
+                <h2>À propos</h2>
+                <p>Avec plusieurs années d'expérience en informatique, j'accompagne les utilisateurs et les entreprises dans leurs besoins techniques quotidiens.</p>
+                <p>Mon parcours m'a amené à développer des compétences complémentaires : assistance et dépannage informatique, développement d'applications web, et gestion de communautés en ligne, notamment pour Pokémon France.</p>
+                <p>Ce qui me passionne particulièrement, c'est l'intelligence artificielle et l'automatisation de processus. J'aime explorer comment les nouvelles technologies comme les agents IA et les outils comme Power Automate ou Exchange peuvent simplifier et optimiser le travail au quotidien.</p>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="competences" class="skills">
+            <h2>Mes Compétences</h2>
+            <div class="skills-grid" itemprop="knowsAbout">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Développement Web</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5 / CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript (ES6+) / jQuery</li>
+                        <li><i class="fas fa-paint-brush"></i> Bootstrap</li>
+                        <li><i class="fab fa-php"></i> PHP</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fab fa-python"></i> Python (bases)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Automatisation & Intégration</h3>
+                    <ul>
+                        <li><i class="fas fa-robot"></i> Power Automate</li>
+                        <li><i class="fas fa-plug"></i> Make.com (ex-Integromat)</li>
+                        <li><i class="fas fa-bolt"></i> Zapier</li>
+                        <li><i class="fas fa-network-wired"></i> N8N</li>
+                        <li><i class="fas fa-project-diagram"></i> Workflows & Intégrations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fab fa-microsoft"></i> Technologies Microsoft</h3>
+                    <ul>
+                        <li><i class="fas fa-desktop"></i> Windows & Administration</li>
+                        <li><i class="fas fa-users"></i> Active Directory</li>
+                        <li><i class="fas fa-cogs"></i> SCCM / Intune</li>
+                        <li><i class="fas fa-envelope"></i> Exchange / Microsoft 365</li>
+                        <li><i class="fas fa-file-word"></i> Suite Microsoft Office</li>
+                        <li><i class="fab fa-windows"></i> PowerShell</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Support Technique & Assistance</h3>
+                    <ul>
+                        <li><i class="fas fa-wrench"></i> Dépannage Informatique</li>
+                        <li><i class="fas fa-desktop"></i> Support Utilisateurs</li>
+                        <li><i class="fas fa-server"></i> Maintenance Systèmes</li>
+                        <li><i class="fas fa-shield-alt"></i> Sécurité Informatique</li>
+                        <li><i class="fas fa-hdd"></i> Gestion de Parc Informatique</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Intelligence Artificielle</h3>
+                    <ul>
+                        <li><i class="fas fa-microchip"></i> LLM (Mistral via Ollama)</li>
+                        <li><i class="fas fa-robot"></i> Agents IA</li>
+                        <li><i class="fas fa-code"></i> API REST</li>
+                        <li><i class="fas fa-cog"></i> Automatisation IA</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projets" class="projects">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                <div class="project-card" itemprop="makesOffer" itemscope itemtype="http://schema.org/CreativeWork">
+                    <div class="project-image">
+                        <img src="img/navi.png" alt="NAVI - Avatar IA" loading="lazy" itemprop="image">
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name"><i class="fas fa-robot"></i> NAVI</h3>
+                        <p itemprop="description">Avatar d'agent IA interactif</p>
+                        <a href="https://navi.dynzels.fr/" target="_blank" class="project-link" itemprop="url">
+                            <i class="fas fa-external-link-alt"></i> Visiter le site
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" itemprop="makesOffer" itemscope itemtype="http://schema.org/CreativeWork">
+                    <div class="project-image">
+                        <img src="img/actifbois.png" alt="Actif Bois - Site vitrine" loading="lazy" itemprop="image">
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name"><i class="fas fa-store"></i> Actif Bois</h3>
+                        <p itemprop="description">Site vitrine avec galerie des réalisations</p>
+                        <a href="https://www.actif-bois.fr/" target="_blank" class="project-link" itemprop="url">
+                            <i class="fas fa-external-link-alt"></i> Visiter le site
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" itemprop="makesOffer" itemscope itemtype="http://schema.org/CreativeWork">
+                    <div class="project-image">
+                        <img src="img/pokenews.png" alt="PokéNews - Actualités Pokémon" loading="lazy" itemprop="image">
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name"><i class="fas fa-newspaper"></i> PokéNews</h3>
+                        <p itemprop="description">Site d'actualité Pokémon</p>
+                        <a href="https://pokenews.dynzels.fr/" target="_blank" class="project-link" itemprop="url">
+                            <i class="fas fa-external-link-alt"></i> Visiter le site
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" itemprop="makesOffer" itemscope itemtype="http://schema.org/CreativeWork">
+                    <div class="project-image">
+                        <img src="img/saintepocket.png" alt="SAINTÉ Pocket - Application ASSE" loading="lazy" itemprop="image">
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name"><i class="fas fa-futbol"></i> SAINTÉ Pocket</h3>
+                        <p itemprop="description">Application Android pour suivre toute l'actualité de l'AS Saint-Étienne. Plus de 1000 téléchargements sur le Play Store.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.saint.etienne.pocket" target="_blank" class="project-link" itemprop="url">
+                            <i class="fab fa-google-play"></i> Voir sur Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact">
+            <h2>Contactez-moi</h2>
+            <div class="contact-content">
+                <p>Vous avez un projet en tête ? N'hésitez pas à me contacter !</p>
+                <a href="mailto:dynzels@gmail.com?subject=Contact depuis dynzels.fr" class="contact-button" itemprop="email">
+                    <i class="fas fa-envelope"></i> dynzels@gmail.com
+                </a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100008264139446" target="_blank" class="social-link" itemprop="sameAs">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yohan-chevrot/" target="_blank" class="social-link" itemprop="sameAs">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Dynzels" target="_blank" class="social-link" itemprop="sameAs">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>Développé par Yohan CHEVROT &copy; 2018</p>
+        <p>Développé par <span itemprop="author">Yohan CHEVROT</span> &copy; <span itemprop="copyrightYear">2024 - 2025</span></p>
     </footer>
 
     <script type="text/javascript" src="./js/app.js"></script>
